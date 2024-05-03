@@ -71,8 +71,77 @@ input[type="checkbox"]:checked ~ section {
     animation-name: knipper;
 }
 
+section > section:nth-child(6) {
+    & > div {
+        width: 200px;
+        height: 200px;
+        background-color: #06394c;
+        border-radius: 50%;
+        border: 5px solid;
+        border-radius: 50%;
+        background: linear-gradient(#06394c, #06394c) padding-box, linear-gradient(340deg, #031c25, #17556c) border-box;
+        border: 4px solid transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
 
-section > section:nth-child(6) > div {
+    & > div:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background-color: #06394c;
+        border-radius: 50%;
+    }
+
+    & > div:nth-child(2)::after {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 150px;
+        background-color: #06394c;
+        bottom: -10px;
+        rotate: -20deg;
+    }
+
+    & > div > div:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        background-color: #000;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    & > div > div:nth-child(2) {
+        position: absolute;
+        width: 100px;
+        height: 9px;
+        background-color: #ff6400;
+        border-radius: 70% 10% 10% 70%;
+        transform-origin: right center;
+        rotate: 1deg;
+        left: 50px;
+    
+        /* animation-duration: 2s; */
+        /* animation-name: rpm; */
+        /* animation-iteration-count: infinite; */
+    
+        transition: 1.5s ease-in-out .1s;;
+    }
+
+    & > div:nth-child(2) {
+        width: 300px;
+        height: 300px;
+        margin: 0em -4em;
+        z-index: 2;
+    }
+}
+
+
+/* section > section:nth-child(6) > div {
     width: 200px;
     height: 200px;
     background-color: #06394c;
@@ -86,18 +155,18 @@ section > section:nth-child(6) > div {
     justify-content: center;
     align-items: center;
     position: relative;
-}
+} */
 
-section section:nth-child(6) > div:nth-child(2)::before {
+/* section section:nth-child(6) > div:nth-child(2)::before {
     content: "";
     position: absolute;
     width: 250px;
     height: 250px;
     background-color: #06394c;
     border-radius: 50%;
-}
+} */
 
-section section:nth-child(6) > div:nth-child(2)::after {
+/* section section:nth-child(6) > div:nth-child(2)::after {
     content: "";
     position: absolute;
     width: 350px;
@@ -105,16 +174,16 @@ section section:nth-child(6) > div:nth-child(2)::after {
     background-color: #06394c;
     bottom: -10px;
     rotate: -20deg;
-}
+} */
 
-section > section:nth-child(6) > div > div:nth-child(1) {
+/* section > section:nth-child(6) > div > div:nth-child(1) {
     width: 20px;
     height: 20px;
     background-color: #000;
     border-radius: 50%;
     z-index: 1;
-}
-
+} */
+/* 
 section > section:nth-child(6) > div > div:nth-child(2) {
     position: absolute;
     width: 100px;
@@ -125,12 +194,12 @@ section > section:nth-child(6) > div > div:nth-child(2) {
     rotate: 1deg;
     left: 50px;
 
-    /* animation-duration: 2s; */
-    /* animation-name: rpm; */
-    /* animation-iteration-count: infinite; */
+    animation-duration: 2s;
+    animation-name: rpm;
+    animation-iteration-count: infinite;
 
     transition: 1.5s ease-in-out .1s;;
-}
+} */
 
 /* @keyframes rpm {
     0% {
@@ -146,12 +215,12 @@ section > section:nth-child(6) > div > div:nth-child(2) {
     }
 } */
 
-section > section:nth-child(6) > div:nth-child(2) {
+/* section > section:nth-child(6) > div:nth-child(2) {
     width: 300px;
     height: 300px;
     margin: 0em -4em;
     z-index: 2;
-}
+} */
 
 section section:nth-child(6) {
     display: flex;
