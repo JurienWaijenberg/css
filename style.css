@@ -208,10 +208,18 @@ section > section:nth-child(1) {
         display: block;
     }
 
+    & > div:nth-child(3) svg {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
     & > div:nth-child(3) > div {
+        position: absolute;
+        top: 30px;
+        left: 30px;
         width: 10px;
         height: 10px;
-        margin-left: 5em;
         background-color: red;
         border-radius: 50%;
         
@@ -245,7 +253,6 @@ section section:nth-child(1) {
     position: absolute;
     top: 365px;
     left: 550px;
-
 }
 
 section section:nth-child(1) > div:nth-child(2) {
@@ -254,7 +261,7 @@ section section:nth-child(1) > div:nth-child(2) {
     overflow: hidden;
 } 
 
-html:has(button:active) section > section:nth-child(1) > div > div:nth-child(2) {
+html:has(button:active) section > section:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
     rotate: 117deg;
 }
 
@@ -342,12 +349,13 @@ button div:nth-child(6) {
 
 
 section > section:nth-child(8) {
-    width: 412px;
+    width: 420px;
     height: 163px;
-    background-color: #000;
+    background-color: #0a0f13;
     position: absolute;
-    top: 482px;
-    left: 1181px;
+    top: 479px;
+    left: 1172px;
+    transform: skew(2deg, -1deg);
     /* left: calc(50% - 200px);
     top: calc(50% - 250px); */
 
